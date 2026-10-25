@@ -10,6 +10,11 @@ try{
   print("Vous avez $age ans");
 }
 on FormatException catch (e) {
-    print("Erreur: ${e.message}");
+    print("Le format de l age n est pas valide: ${e.message}");
 } 
+
+finally{
+  print("fin d'operation");
+}
+
 }
